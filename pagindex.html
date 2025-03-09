@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo de colores y botón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: background-color 1s;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #fff;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenido a mi página!</h1>
+    <button onclick="redirigir()">Haz clic aquí</button>
+
+    <script>
+        // Cambiar el fondo de color al azar
+        const colores = ["#FF6347", "#FFD700", "#32CD32", "#1E90FF", "#8A2BE2", "#FF1493"];
+        document.body.style.backgroundColor = colores[Math.floor(Math.random() * colores.length)];
+
+        // Función para redirigir al video
+        function redirigir() {
+            window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=pygR9R7XlL5Jo4Ng";
+        }
+    </script>
+</body>
+</html>
